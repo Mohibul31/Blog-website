@@ -1,0 +1,35 @@
+@media (max-width: 900px) {
+  .hero-image {
+    margin-top: 50px;
+  }
+  .newsletter-image{
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 950px) {
+  .hero-image {
+    margin-left: 50px;
+  }
+  .newsletter-image{
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .post-card {
+    margin-bottom: 20px; /* Add spacing between cards on mobile */
+  }
+
+  .post-image {
+    height: 150px; /* Smaller image height on mobile */
+  }
+
+  .post-title {
+    font-size: 1.3rem; /* Smaller title on mobile */
+  }
+
+  .post-excerpt {
+    font-size: 0.9rem; /* Smaller excerpt on mobile */
+  }
+}

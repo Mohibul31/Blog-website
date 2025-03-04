@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebCrafters - Your Web Development Hub</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--font awsome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">WebCrafters</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Column: Content -->
+          <div class="col-lg-6">
+            <h1 class="hero-heading">Master the Art of Web Development</h1>
+            <p class="hero-description">
+              Explore the latest trends, tutorials, and resources in web
+              development. Whether you're a beginner or an expert, WebCrafters
+              has something for everyone.
+            </p>
+
+            <!-- Call-to-Action Buttons -->
+            <div class="hero-cta">
+              <a href="#blog" class="btn btn-primary me-3">Read Blogs</a>
+              <a href="#subscribe" class="btn btn-outline-light">Subscribe</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="hero-search mt-4">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search for articles..."
+              />
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="hero-social mt-4">
+              <p class="text-muted">Follow us:</p>
+              <a href="#" class="text-light me-3"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <!-- Right Column: Image Placeholder -->
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <!-- Add an image related to web development here -->
+              <img
+                src="image/placeholder-image.png"
+                alt="Web Development"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Blog Posts Section -->
+    <section class="featured-posts">
+      <div class="container">
+        <h2 class="section-heading">Featured Blog Posts</h2>
+        <p class="section-description">
+          Explore our most popular and recent articles on web development.
+        </p>
+        <div class="row">
+          <!-- Post 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="post-card">
+              <img
+                src="image/post1.jpg"
+                alt="JavaScript Frameworks"
+                class="post-image"
+              />
+              <div class="post-content">
+                <h3 class="post-title">Top 10 JavaScript Library</h3>
+                <p class="post-excerpt">
+                  Discover the best JavaScript frameworks to learn in 2025.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Post 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="post-card">
+              <img
+                src="image/post2.jpg"
+                alt="CSS Grid Layout"
+                class="post-image"
+              />
+              <div class="post-content">
+                <h3 class="post-title">Mastering CSS Grid Layout</h3>
+                <p class="post-excerpt">
+                  Learn how to create responsive and modern layouts using CSS
+                  Grid.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Post 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="post-card">
+              <img
+                src="image/post3.jpg"
+                alt="React Development"
+                class="post-image"
+              />
+              <div class="post-content">
+                <h3 class="post-title">Getting Started with React</h3>
+                <p class="post-excerpt">
+                  A beginner's guide to building dynamic web applications with
+                  React.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Explore Categories</h2>
+        <div class="row">
+          <!-- Web Development -->
+          <div class="col-md-4 mb-4">
+            <div class="category-card">
+              <img
+                src="image/cat1.jpeg"
+                alt="Web Development"
+                class="img-fluid"
+              />
+              <div class="category-content">
+                <h3>Web Development</h3>
+                <p>
+                  Learn the latest in web development technologies and
+                  frameworks.
+                </p>
+                <a href="#" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <!-- Design -->
+          <div class="col-md-4 mb-4">
+            <div class="category-card">
+              <img src="image/cat2.jpg" alt="Design" class="img-fluid" />
+              <div class="category-content">
+                <h3>Design</h3>
+                <p>
+                  Discover the best practices in UI/UX design and prototyping.
+                </p>
+                <a href="#" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <!-- SEO -->
+          <div class="col-md-4 mb-4">
+            <div class="category-card">
+              <img src="image/cat3.jpeg" alt="SEO" class="img-fluid" />
+              <div class="category-content">
+                <h3>SEO</h3>
+                <p>
+                  Master search engine optimization to boost your website's
+                  visibility.
+                </p>
+                <a href="#" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Column: Image -->
+          <div class="col-lg-6">
+            <div class="newsletter-image">
+              <img
+                src="image/newsletter.jpeg"
+                alt="Subscribe to Newsletter"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <!-- Right Column: Content -->
+          <div class="col-lg-6">
+            <h2 class="newsletter-heading">Subscribe to Our Newsletter</h2>
+            <p class="newsletter-description">
+              Stay updated with the latest web development trends, tutorials,
+              and resources. Join our community today!
+            </p>
+            <!-- Subscription Form -->
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Team Section -->
+    <section class="team-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 team-heading">Meet Our Team</h2>
+        <div class="row">
+          <!-- Team Member 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="team-card">
+              <img
+                src="image/team1.jpeg"
+                alt="Team Member 1"
+                class="img-fluid team-img"
+              />
+              <div class="team-info">
+                <h4 class="team-name">John Doe</h4>
+                <p class="team-role">Web Developer</p>
+                <div class="team-social">
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="team-card">
+              <img
+                src="image/team2.jpeg"
+                alt="Team Member 2"
+                class="img-fluid team-img"
+              />
+              <div class="team-info">
+                <h4 class="team-name">Jane Smith</h4>
+                <p class="team-role">UI/UX Designer</p>
+                <div class="team-social">
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="team-card">
+              <img
+                src="image/team3.jpeg"
+                alt="Team Member 3"
+                class="img-fluid team-img"
+              />
+              <div class="team-info">
+                <h4 class="team-name">Mike Johnson</h4>
+                <p class="team-role">SEO Specialist</p>
+                <div class="team-social">
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <!-- About Column -->
+            <div class="col-md-4 mb-4">
+                <h3 class="footer-heading">WebCrafters</h3>
+                <p class="footer-text">Your ultimate destination for web development tutorials, resources, and insights. Stay updated with the latest trends and technologies.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="col-md-4 mb-4">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div class="col-md-4 mb-4">
+                <h3 class="footer-heading">Subscribe to Our Newsletter</h3>
+                <p class="footer-text">Get the latest updates and resources directly in your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="copyright-text">© 2025 WebCrafters. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!--main js-->
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
